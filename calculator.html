@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="text" placeholder="num1" id="n1">
+    <input type="text" placeholder="num2" id="n2"><br><br>
+    <button onclick="sum()">add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="multiply()">multiply</button>
+    <button onclick="division()">divide</button><br><br>
+    <input type="text" placeholder="Ans" id="ans">
+    <script>
+        function sum(){
+    let a=Number(document.getElementById('n1').value);
+    let b=Number(document.getElementById('n2').value);
+    let ans=a+b;
+    document.getElementById('ans').value=ans;
+}
+function sub(){
+    let a=Number(document.getElementById('n1').value);
+    let b=Number(document.getElementById('n2').value);
+    let ans=a-b;
+    document.getElementById('ans').value=ans;
+}
+function multiply(){
+    let a=Number(document.getElementById('n1').value);
+    let b=Number(document.getElementById('n2').value);
+    let ans=a*b;
+    document.getElementById('ans').value=ans;
+}
+function division(){
+    let a=Number(document.getElementById('n1').value);
+    let b=Number(document.getElementById('n2').value);
+    let ans=a/b;
+    document.getElementById('ans').value=ans;
+}
+ 
+   </script>
+</body>
+</html>
